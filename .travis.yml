@@ -1,0 +1,26 @@
+language: php
+
+addons:
+  code_climate:
+    repo_token: "80467d4f124c2ae38c4a907da7b9d56d8faa65a1821b8fdf137e85ece5cd3f99"
+
+php:
+  - '5.6'
+  - '7.0'
+  - '7.1'
+  - 'nightly'
+
+matrix:
+  allow_failures:
+    - php: '5.4'
+    - php: '5.5'
+    - php: 'nightly'
+
+install:
+  - composer install
+
+script:
+  - composer travis
+
+after_script:
+  - ./vendor/bin/test-reporter
