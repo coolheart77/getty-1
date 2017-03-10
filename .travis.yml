@@ -2,7 +2,7 @@ language: php
 
 addons:
   code_climate:
-    repo_token: "80467d4f124c2ae38c4a907da7b9d56d8faa65a1821b8fdf137e85ece5cd3f99"
+    repo_token: ""
 
 php:
   - '5.6'

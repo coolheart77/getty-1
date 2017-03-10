@@ -16,5 +16,4 @@ interface Listener
      * @param int $id
      */
     public function requestEnd($id);
-
 }

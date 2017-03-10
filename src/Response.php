@@ -65,5 +65,4 @@ class Response
     {
         return $this->code;
     }
-
 }
